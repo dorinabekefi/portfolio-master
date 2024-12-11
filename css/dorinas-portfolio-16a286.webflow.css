@@ -883,3 +883,20 @@ a {
 a.ref:hover {
   text-decoration: none;
 }
+
+/* Ensure consistent font weight across devices */
+body {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; /* For Safari and Chrome */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox */
+  text-rendering: optimizeLegibility; /* Improves font rendering */
+}
+
+/* Mobile-specific font smoothing */
+@media (max-width: 768px) {
+  body {
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+}
